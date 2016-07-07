@@ -1,3 +1,4 @@
+"use strict";
 
 module.exports = {
     load: function () {
@@ -6,7 +7,9 @@ module.exports = {
     unload: function () {
     },
 
-    'sprite-editor:open': function () {
-        Editor.Panel.open('sprite-editor.panel');
+    messages: {
+        open:function () {
+            Editor.Panel.open("sprite-editor");
+        }
     }
 };
